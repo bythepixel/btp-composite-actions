@@ -1,5 +1,5 @@
 inputs:
-  name:
+  php-version:
     description: 'PHP Version'
     default: '8.1'
 runs:
@@ -11,7 +11,7 @@ runs:
     - name: Install PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: ${{ inputs.name }}
+        php-version: ${{ inputs.php-version }}
         tools: composer
 
     - name: Install PHP dependencies through Composer
